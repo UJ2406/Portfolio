@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ujjwal Singh - Traveler's Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body class="bg-[#fdfaf6] text-gray-700 antialiased overflow-x-hidden">
+
+    <nav class="bg-white/80 backdrop-blur-md sticky top-0 z-50 w-full shadow-md shadow-gray-200/50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-4"> <a href="#home" class="font-genshin text-3xl font-bold text-gray-700 tracking-wide">
+                        UJ's Tevyat 
+                    </a>
+                
+                <div class="hidden md:flex items-center space-x-2 pt-1"> <img src="https://genshin-impact.fandom.com/wiki/Special:Redirect/file/Element_Pyro.png" 
+                         alt="Pyro" title="Pyro" 
+                         class="h-6 w-6 transition-transform duration-300 hover:scale-125">
+                    
+                    <img src="https://genshin-impact.fandom.com/wiki/Special:Redirect/file/Element_Hydro.png" 
+                         alt="Hydro" title="Hydro" 
+                         class="h-6 w-6 transition-transform duration-300 hover:scale-125">
+
+                    <img src="https://genshin-impact.fandom.com/wiki/Special:Redirect/file/Element_Geo.png" 
+                         alt="Geo" title="Geo" 
+                         class="h-6 w-6 transition-transform duration-300 hover:scale-125">
+
+                    <img src="https://genshin-impact.fandom.com/wiki/Special:Redirect/file/Element_Cryo.png" 
+                         alt="Cryo" title="Cryo" 
+                         class="h-6 w-6 transition-transform duration-300 hover:scale-125">
+
+                    <img src="https://genshin-impact.fandom.com/wiki/Special:Redirect/file/Element_Electro.png" 
+                         alt="Electro" title="Electro" 
+                         class="h-6 w-6 transition-transform duration-300 hover:scale-125">
+                         
+                    <img src="https://genshin-impact.fandom.com/wiki/Special:Redirect/file/Element_Anemo.png" 
+                         alt="Anemo" title="Anemo" 
+                         class="h-6 w-6 transition-transform duration-300 hover:scale-125">
+
+                    <img src="https://genshin-impact.fandom.com/wiki/Special:Redirect/file/Element_Dendro.png" 
+                         alt="Dendro" title="Dendro" 
+                         class="h-6 w-6 transition-transform duration-300 hover:scale-125">
+                         
+                </div>
+                </div>
+
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="#home" class="text-gray-600 hover:text-yellow-600 font-genshin text-lg transition-all duration-300 transform hover:scale-110">Home</a>
+                <a href="#about" class="text-gray-600 hover:text-yellow-600 font-genshin text-lg transition-all duration-300 transform hover:scale-110">About Me</a>
+                <a href="#projects" class="text-gray-600 hover:text-yellow-600 font-genshin text-lg transition-all duration-300 transform hover:scale-110">Adventurer's Log</a>
+                <a href="#contact" class="text-gray-600 hover:text-yellow-600 font-genshin text-lg transition-all duration-300 transform hover:scale-110">Send a Letter</a>
+                
+                <a href="https://drive.google.com/file/d/1JGTYTvONczczzglnFAB_INH7j1-DXflv/view?usp=drive_link" target="_blank" class="btn-genshin"> My Resume
+                </a>
+            </div>
+            
+            
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700 focus:outline-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-yellow-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-100">
+            <a href="#home" class="block py-3 px-6 text-gray-600 hover:bg-gray-50 hover:text-yellow-600 font-genshin text-lg">Home</a>
+            <a href="#about" class="block py-3 px-6 text-gray-600 hover:bg-gray-50 hover:text-yellow-600 font-genshin text-lg">About Me</a>
+            <a href="#projects" class="block py-3 px-6 text-gray-600 hover:bg-gray-50 hover:text-yellow-600 font-genshin text-lg">Adventurer's Log</a>
+            <a href="#contact" class="block py-3 px-6 text-gray-600 hover:bg-gray-50 hover:text-yellow-600 font-genshin text-lg">Send a Letter</a>
+            <a href="https://drive.google.com/file/d/1JGTYTvONczczzglnFAB_INH7j1-DXflv/view?usp=drive_link" target="_blank" class="block py-3 px-6 text-gray-600 hover:bg-gray-50 hover:text-yellow-600 font-genshin text-lg">My Resume</a> </div>
+    </nav>
+
+    <section id="home" class="relative min-h-screen flex items-center justify-center text-center overflow-hidden bg-gradient-to-b from-blue-100 via-sky-100 to-yellow-50">
+        <div id="particle-container"></div>
+        
+        <div class="relative z-10 p-8 animate-on-scroll animate-fade-in-up is-visible">
+            <h1 class="font-genshin text-5xl md:text-7xl font-bold text-gray-800 mb-4">
+                Welcome, <span class="text-yellow-600 text-glow-gold">Traveler</span>.
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-600 mb-8 max-w-2xl mx-auto" style="animation-delay: 0.3s;">
+                I'm Ujjwal Singh, a Cybersecurity and AI Enthusiast.
+                <br>Let's secure the digital world.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4" style="animation-delay: 0.6s;">
+                <a href="#projects" class="btn-genshin">
+                    View My Log
+                </a>
+                <a href="#contact" class="btn-genshin-secondary">
+                    Get In Touch
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 bg-[#fdfaf6] overflow-hidden">
+        <div class="container mx-auto px-6">
+            <div class="text-center animate-on-scroll animate-fade-in-up">
+                <h2 class="font-genshin text-4xl font-bold text-gray-800 mb-4">About Me</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="flex flex-col md:flex-row items-center gap-12 mt-16">
+                <div class="md:w-1/3 w-full animate-on-scroll animate-slide-in-left">
+                    <div class="project-card-genshin p-2">
+                        <img src="C:\Users\Ujjwal Singh\Desktop\portolio\images\me1.jpg" 
+                             alt="Ujjwal Singh at IEEE ACROSET 2025" 
+                             class="w-full h-auto object-cover rounded-lg"
+                             onerror="this.src='https://placehold.co/600x700/FFF1B8/4A4A4A?text=Ujjwal+Singh'; this.onerror=null;">
+                    </div>
+                </div>
+                <div class="md:w-2/3 w-full animate-on-scroll animate-slide-in-right">
+                    <h3 class="font-genshin text-3xl font-semibold text-gray-800 mb-4">Adventurer's Profile</h3>
+                    <p class="text-gray-600 text-lg mb-6 leading-relaxed">
+                        Cybersecurity and AI Enthusiast with hands-on experience in threat monitoring, incident detection, and security automation. Certified Ethical Hacker skilled in Python, risk analysis, and compliance, with a proven ability to deliver analyst-ready dashboards and security reports.
+                    </p>
+                    <h4 class="font-genshin text-2xl font-semibold text-gray-800 mb-6">My Talents</h4>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="talent-tag bg-purple-100 text-purple-700 border-purple-300">Certified Ethical Hacker (CEH)</span>
+                        <span class="talent-tag bg-green-100 text-green-700 border-green-300">Penetration Testing</span>
+                        <span class="talent-tag bg-blue-100 text-blue-700 border-blue-300">Ethical Hacking</span>
+                        <span class="talent-tag bg-yellow-100 text-yellow-700 border-yellow-300">SOC Analysis</span>
+                        <span class="talent-tag bg-purple-100 text-purple-700 border-purple-300">Threat Analysis</span>
+                        <span class="talent-tag bg-red-100 text-red-700 border-red-300">Nmap</span>
+                        <span class="talent-tag bg-gray-100 text-gray-700 border-gray-300">Wireshark</span>
+                        <span class="talent-tag bg-green-100 text-green-700 border-green-300">BurpSuite</span>
+                        <span class="talent-tag bg-blue-100 text-blue-700 border-blue-300">Splunk</span>
+                        <span class="talent-tag bg-yellow-100 text-yellow-700 border-yellow-300">Python</span>
+                        <span class="talent-tag bg-purple-100 text-purple-700 border-purple-300">SQL</span>
+                        <span class="talent-tag bg-red-100 text-red-700 border-red-300">Linux</span>
+                        <span class="talent-tag bg-gray-100 text-gray-700 border-gray-300">Bash Shell Scripting</span>
+                        <span class="talent-tag bg-green-100 text-green-700 border-green-300">TensorFlow</span>
+                        <span class="talent-tag bg-blue-100 text-blue-700 border-blue-300">PyTorch</span>
+                        <span class="talent-tag bg-yellow-100 text-yellow-700 border-yellow-300">Scikit-learn</span>
+                        <span class="talent-tag bg-purple-100 text-purple-700 border-purple-300">Pandas</span>
+                        <span class="talent-tag bg-red-100 text-red-700 border-red-300">Flask</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-24 bg-white overflow-hidden">
+        <div class="container mx-auto px-6">
+            <div class="text-center animate-on-scroll animate-fade-in-up">
+                <h2 class="font-genshin text-4xl font-bold text-gray-800 mb-4">Adventurer's Log</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">A record of artifacts created and challenges overcome during my journey.</p>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-16">
+                
+                <div class="project-card-genshin animate-on-scroll animate-fade-in-up" style="transition-delay: 0.1s;">
+                    <div class="shine-effect">
+                        <img src="https://placehold.co/600x400/334155/FDE68A?text=Network+Scanner" 
+                             alt="Network Scanner Project" 
+                             class="w-full h-56 object-cover rounded-t-lg"
+                             onerror="this.src='https://placehold.co/600x400/334155/FDE68A?text=Project+Image'; this.onerror=null;">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-genshin text-xl font-bold text-gray-800 mb-2">Network Scanner</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Built an advanced terminal-based network security scanner with Python, featuring quick, full, and custom port scans, vulnerability assessment, and automated IP detection.</p>
+                        <div class="flex space-x-4">
+                            <a href="https://github.com/UJ2406/Network_Scanner" target="_blank" class="btn-genshin-secondary !px-4 !py-2 !text-xs">View Log</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card-genshin animate-on-scroll animate-fade-in-up" style="transition-delay: 0.2s;">
+                    <div class="shine-effect">
+                        <img src="https://placehold.co/600x400/4F46E5/FDE68A?text=FortiPass" 
+                             alt="FortiPass Project" 
+                             class="w-full h-56 object-cover rounded-t-lg"
+                             onerror="this.src='https://placehold.co/600x400/4F46E5/FDE68A?text=Project+Image'; this.onerror=null;">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-genshin text-xl font-bold text-gray-800 mb-2">FortiPass</h3>
+                        <p class="text-gray-600 mb-4 text-sm">A modern Python-based password strength tester that analyzes passwords using entropy, OWASP guidelines, and pattern detection, ensuring user privacy.</p>
+                        <div class="flex space-x-4">
+                            <a href="https://github.com/UJ2406/FortiPass" target="_blank" class="btn-genshin-secondary !px-4 !py-2 !text-xs">View Log</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card-genshin animate-on-scroll animate-fade-in-up" style="transition-delay: 0.3s;">
+                    <div class="shine-effect">
+                        <img src="https://placehold.co/600x400/166534/FDE68A?text=StegoShield" 
+                             alt="StegoShield Project" 
+                             class="w-full h-56 object-cover rounded-t-lg"
+                             onerror="this.src='https://placehold.co/600x400/166534/FDE68A?text=Project+Image'; this.onerror=null;">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-genshin text-xl font-bold text-gray-800 mb-2">StegoShield</h3>
+                        <p class="text-gray-600 mb-4 text-sm">A Python-based steganography tool for securely embedding and extracting hidden information within digital images using advanced covert communication techniques.</p>
+                        <div class="flex space-x-4">
+                            <a href="https://github.com/UJ2406/steganography" target="_blank" class="btn-genshin-secondary !px-4 !py-2 !text-xs">View Log</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-24 bg-[#fdfaf6] overflow-hidden">
+        <div class="container mx-auto px-6">
+            <div class="text-center animate-on-scroll animate-fade-in-up">
+                <h2 class="font-genshin text-4xl font-bold text-gray-800 mb-4">Field Experience</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="max-w-3xl mx-auto mt-12 bg-white p-8 rounded-lg shadow-xl border-4 border-transparent animate-on-scroll animate-fade-in-up" style="border-image: linear-gradient(to bottom, #fde68a, #d4af37) 1; box-shadow: 0 10px 15px -3px rgba(212, 175, 55, 0.1), 0 4px 6px -4px rgba(212, 175, 55, 0.1);">
+                <div class="flex justify-between items-center mb-3">
+                    <h3 class="font-genshin text-2xl font-bold text-gray-800 text-yellow-600">Cisco Virtual Internship</h3>
+                    <span class="font-genshin text-base text-gray-500">June 2025 - Aug 2025</span>
+                </div>
+                <p class="font-genshin text-sm text-gray-500 mb-4">AICTE Virtual Internship Program in Cybersecurity</p>
+                <ul class="list-disc list-inside text-gray-600 text-lg space-y-2 leading-relaxed">
+                    <li>Successfully completed the virtual internship offered by Cisco Networking Academy.</li>
+                    <li>Developed essential skillsets for cybersecurity and networking, focusing on practical industry standards.</li>
+                    <li>Collaborated with Bennett University and Cisco program partners for hands-on learning alongside global peers.</li>
+                </ul>
+                <a href="https://drive.google.com/file/d/1WJicPpsHpk-eiQ3UdfJzwMMbpWhZwnp3/view?usp=drive_link" target="_blank" class="btn-genshin-secondary mt-6 inline-block">
+                    View Internship Letter
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="research" class="py-24 bg-white overflow-hidden">
+        <div class="container mx-auto px-6">
+            <div class="text-center animate-on-scroll animate-fade-in-up">
+                <h2 class="font-genshin text-4xl font-bold text-gray-800 mb-4">Scholarly Discoveries</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="max-w-3xl mx-auto mt-12 bg-white p-8 rounded-lg shadow-xl border-4 border-transparent animate-on-scroll animate-fade-in-up" style="border-image: linear-gradient(to bottom, #fde68a, #d4af37) 1; box-shadow: 0 10px 15px -3px rgba(212, 175, 55, 0.1), 0 4px 6px -4px rgba(212, 175, 55, 0.1);">
+                <span class="block font-genshin text-base text-gray-500 mb-3 text-center">Published & Presented at IEEE ACROSET 2025</span>
+                <h3 class="font-genshin text-2xl font-bold text-gray-800 text-yellow-600 text-center">AI-Powered Ransom Negotiation for Mitigating Cyber Extortion Losses in Digital Arrest Scams</h3>
+                <p class="text-gray-600 text-lg space-y-2 leading-relaxed my-6 text-center">
+                    Authored and presented research on a novel AI-driven framework to automate ransom negotiation. The model analyzes attacker behavior and negotiation tactics to mitigate financial losses from "digital arrest" and other cyber extortion scams.
+                </p>
+                <div class="text-center">
+                    <a href="https://drive.google.com/file/d/1OSpHWJWdKMAX3QfZfU6_LA7RsEaTcJDj/view?usp=drive_link" target="_blank" class="btn-genshin-secondary mt-6 inline-block">
+                        View Certificate
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="accolades" class="py-24 bg-[#fdfaf6] overflow-hidden">
+        <div class="container mx-auto px-6">
+            <div class="text-center animate-on-scroll animate-fade-in-up">
+                <h2 class="font-genshin text-4xl font-bold text-gray-800 mb-4">Adventurer's Accolades</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Official recognitions and certifications acquired during my journey.</p>
+                <div class="section-divider"></div>
+            </div>
+            <div class="max-w-4xl mx-auto mt-12 animate-on-scroll animate-fade-in-up">
+                <ul class="space-y-4">
+                    <li class="p-4 bg-white rounded-lg shadow-md border border-gray-200 flex items-center">
+                        <span class="text-yellow-600 mr-3">✦</span>
+                        <a href="https://drive.google.com/file/d/1WX7uOjgp6wR5OuN2b5kNZbvcckn88ViS/view?usp=drive_link" target="_blank" class="font-genshin text-lg text-gray-700 hover:text-yellow-700 hover:underline transition-colors duration-300">
+                            EC-Council: Certified Ethical Hacker
+                        </a>
+                    </li>
+                    <li class="p-4 bg-white rounded-lg shadow-md border border-gray-200 flex items-center">
+                        <span class="text-yellow-600 mr-3">✦</span>
+                        <a href="https://drive.google.com/drive/folders/1DlzkzcvCfCsNPkkJXLzKfRaS2qCvbQdO?usp=drive_link" target="_blank" class="font-genshin text-lg text-gray-700 hover:text-yellow-700 hover:underline transition-colors duration-300">
+                            Google Cybersecurity Certificate
+                        </a>
+                    </li>
+                    <li class="p-4 bg-white rounded-lg shadow-md border border-gray-200 flex items-center">
+                        <span class="text-yellow-600 mr-3">✦</span>
+                        <span class="font-genshin text-lg text-gray-700">Cisco: Cybersecurity Operations Fundamentals</span>
+                    </li>
+                     <li class="p-4 bg-white rounded-lg shadow-md border border-gray-200 flex items-center">
+                        <span class="text-yellow-600 mr-3">✦</span>
+                        <span class="font-genshin text-lg text-gray-700">Coursera: Object-Oriented Data Structures in C++</span>
+                    </li>
+                    <li class="p-4 bg-white rounded-lg shadow-md border border-gray-200 flex items-center">
+                        <span class="text-yellow-600 mr-3">✦</span>
+                        <span class="font-genshin text-lg text-gray-700">Coursera: Managing Network Security</span>
+                    </li>
+                    <li class="p-4 bg-white rounded-lg shadow-md border border-gray-200 flex items-center">
+                        <span class="text-yellow-600 mr-3">✦</span>
+                        <span class="font-genshin text-lg text-gray-700">Coursera: Algorithmic Toolbox</span>
+                    </li>
+                    <li class="p-4 bg-white rounded-lg shadow-md border border-gray-200 flex items-center">
+                        <span class="text-yellow-600 mr-3">✦</span>
+                        <a href="https://drive.google.com/file/d/177cp01RGuXcDDL5Mji2cSRfKHlC3rfMG/view?usp=drive_link" target="_blank" class="font-genshin text-lg text-gray-700 hover:text-yellow-700 hover:underline transition-colors duration-300">
+                            Security 101 by TryHackMe
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 bg-gray-800 text-white overflow-hidden"> <div class="container mx-auto px-6">
+            <div class="text-center animate-on-scroll animate-fade-in-up">
+                <h2 class="font-genshin text-4xl font-bold text-white mb-4">Send a Letter</h2> <p class="text-lg text-gray-300 max-w-2xl mx-auto">Have a commission, a quest, or just want to say hi? Send a message, don't worry Paimon won't eat it!</p> <div class="section-divider"></div>
+            </div>
+
+            <div class="max-w-xl mx-auto mt-16 p-8 bg-gray-700 rounded-lg shadow-xl border border-gray-600 animate-on-scroll animate-fade-in-up" style="transition-delay: 0.2s;"> <form id="contact-form" action="https://formspree.io/f/mblqlqrg" method="POST"> <div class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-genshin font-medium text-gray-200 mb-2">Your Name</label> <input type="text" id="name" name="name" required class="w-full px-4 py-3 bg-gray-800 border-2 border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all duration-300"> </div>
+                        <div>
+                            <label for="email" class="block text-sm font-genshin font-medium text-gray-200 mb-2">Your Email</label> <input type="email" id="email" name="email" required class="w-full px-4 py-3 bg-gray-800 border-2 border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all duration-300"> </div>
+                        <div>
+                            <label for="message" class="block text-sm font-genshin font-medium text-gray-200 mb-2">Your Message</label> <textarea id="message" name="message" rows="5" required class="w-full px-4 py-3 bg-gray-800 border-2 border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all duration-300"></textarea> </div>
+                    </div>
+                    <div class="text-center mt-8">
+                        <button type="submit" class="btn-genshin font-genshin font-bold text-sm text-gray-700 bg-gradient-to-b from-yellow-200 to-yellow-400 border-2 border-yellow-500 rounded-lg px-6 py-3 shadow-lg transition-all duration-300 hover:from-yellow-100 hover:to-yellow-300 hover:scale-105 hover:shadow-yellow-500/30 active:scale-95 active:shadow-inner active:transform active:translate-y-px">
+                            Send Letter
+                        </button>
+                    </div>
+                </form>
+                <div id="form-message" class="mt-6 text-center text-lg text-green-400 font-genshin hidden"> Message sent! I'll get back to you soon.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 py-12 text-white border-t border-gray-700"> <div class="container mx-auto px-6 text-center">
+            <div class="flex justify-center space-x-6 mb-6">
+                <a href="https://github.com/UJ2406" target="_blank" class="text-gray-400 hover:text-white transition-all duration-300 transform hover:scale-125" aria-label="GitHub">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.109-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/ujz" target="_blank" class="text-gray-400 hover:text-white transition-all duration-300 transform hover:scale-125" aria-label="LinkedIn">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                </a>
+                <a href="https://tryhackme.com/p/UJz" target="_blank" class="text-gray-400 hover:text-white transition-all duration-300 transform hover:scale-125 w-8 h-8 flex justify-center items-center" aria-label="TryHackMe">
+                    <i class="fa-solid fa-shield-halved fa-2x"></i>
+                </a>
+            </div>
+            <p class="text-gray-400 text-sm font-genshin">&copy; 2025 Ujjwal Singh. All rights reserved.</p>
+            <p class="text-xs text-gray-500 mt-2 font-genshin">Coded with Elemental Energy (and Tailwind CSS).</p>
+        </div>
+    </footer>
+
+    <button id="back-to-top" class="fixed bottom-8 right-8 btn-genshin w-14 h-14 rounded-full hidden justify-center items-center z-50 !p-0 pulse-button">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,181 @@
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: #fdfaf6; }
+::-webkit-scrollbar-thumb { background: #d4af37; border-radius: 5px; border: 1px solid #b8860b; }
+::-webkit-scrollbar-thumb:hover { background: #e6c200; }
+
+/* Set Custom Fonts */
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #fdfaf6;
+    color: #4a4a4a;
+}
+.font-genshin {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* Soft Golden Glow Effect */
+.text-glow-gold {
+    text-shadow: 0 0 5px #fde68a, 0 0 10px #fcd34d, 0 0 15px #facc15;
+}
+
+/* Ornamental Section Divider */
+.section-divider {
+    height: 2px;
+    width: 200px;
+    background: linear-gradient(to right, transparent, #d4af37, transparent);
+    margin: 1rem auto 2.5rem auto;
+    position: relative;
+}
+.section-divider::before, .section-divider::after {
+    content: '✦';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #d4af37;
+    font-size: 1.2rem;
+    line-height: 1;
+}
+.section-divider::before { left: 50%; margin-left: -20px; }
+.section-divider::after { right: 50%; margin-right: -20px; }
+
+/* Genshin UI Button Style */
+.btn-genshin {
+    @apply font-genshin font-bold text-sm text-gray-700 bg-gradient-to-b from-yellow-200 to-yellow-400 border-2 border-yellow-500 rounded-lg px-6 py-3 shadow-lg transition-all duration-300;
+    box-shadow: 0 4px 6px -1px rgba(212, 175, 55, 0.3), 0 2px 4px -2px rgba(212, 175, 55, 0.3), inset 0 1px 1px 0 rgba(255, 255, 255, 0.6);
+}
+.btn-genshin:hover {
+    @apply from-yellow-100 to-yellow-300 scale-105 shadow-yellow-500/30;
+}
+.btn-genshin:active {
+    @apply scale-95 shadow-inner transform translate-y-px;
+}
+
+.btn-genshin-secondary {
+    @apply font-genshin font-bold text-sm text-gray-700 bg-white border-2 border-gray-300 rounded-lg px-6 py-3 shadow-md transition-all duration-300;
+}
+.btn-genshin-secondary:hover {
+    @apply bg-gray-50 scale-105 shadow-lg;
+}
+.btn-genshin-secondary:active {
+    @apply scale-95 shadow-inner transform translate-y-px;
+}
+
+/* Project Card Styling */
+.project-card-genshin {
+    @apply bg-white rounded-lg shadow-xl border-4 border-transparent transition-all duration-300 ease-in-out;
+    border-image: linear-gradient(to bottom, #fde68a, #d4af37) 1;
+    box-shadow: 0 10px 15px -3px rgba(212, 175, 55, 0.1), 0 4px 6px -4px rgba(212, 175, 55, 0.1);
+}
+.project-card-genshin:hover {
+    @apply shadow-2xl shadow-yellow-500/30 transform scale-105;
+}
+
+/* NEW: Glint/Shine effect on hover */
+.shine-effect {
+    position: relative;
+    overflow: hidden;
+}
+.shine-effect::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -60%;
+    width: 20%;
+    height: 200%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
+    transform: skewX(-25deg);
+    opacity: 0;
+    transition: all 0.5s;
+}
+.project-card-genshin:hover .shine-effect::after {
+    left: 140%;
+    opacity: 1;
+    transition: all 0.7s ease-in-out;
+}
+
+/* Form Styling */
+.form-input-genshin {
+    @apply w-full px-4 py-3 bg-white border-2 border-gray-300 rounded-lg text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all duration-300;
+    box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+}
+.form-input-genshin:focus {
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+}
+
+/* NEW: Dark Form Styling */
+.form-input-genshin-dark {
+     @apply w-full px-4 py-3 bg-gray-800 border-2 border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all duration-300;
+    box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+    caret-color: #ffffff; /* Make the typing cursor white */
+}
+
+/* NEW: Fix for browser autofill on dark form */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover, 
+textarea:-webkit-autofill:focus, 
+textarea:-webkit-autofill:active  {
+    -webkit-text-fill-color: #ffffff !important; /* Force text to be white */
+    -webkit-box-shadow: 0 0 0 1000px #1f2937 inset !important; /* Force bg to be bg-gray-800 */
+    transition: background-color 5000s ease-in-out 0s;
+    caret-color: #ffffff; /* Make the typing cursor white too */
+}
+
+
+/* NEW: Particle Background */
+#particle-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+.particle {
+    position: absolute;
+    background: #fcd34d;
+    border-radius: 50%;
+    opacity: 0.6;
+    animation: float 20s infinite ease-in-out;
+    box-shadow: 0 0 5px #fcd34d, 0 0 10px #facc15;
+}
+@keyframes float {
+    0% { transform: translateY(0) translateX(0); opacity: 0.6; }
+    50% { transform: translateY(-100vh) translateX(20px); opacity: 0.8; }
+    100% { transform: translateY(-200vh) translateX(0); opacity: 0; }
+}
+
+/* NEW: Scroll-Triggered Animations */
+.animate-on-scroll {
+    opacity: 0;
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.animate-slide-in-left { transform: translateX(-50px); }
+.animate-slide-in-right { transform: translateX(50px); }
+.animate-fade-in-up { transform: translateY(30px); }
+
+.is-visible {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+}
+
+/* NEW: Pulsing Back-to-Top Button */
+.pulse-button {
+    animation: pulse-gold 2s infinite;
+}
+@keyframes pulse-gold {
+    0% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.4); }
+    70% { box-shadow: 0 0 0 15px rgba(212, 175, 55, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0); }
+}
+
+/* NEW: Talent Tag Styling */
+.talent-tag {
+    @apply font-genshin text-sm font-medium px-4 py-2 rounded-lg border-2 transition-all duration-300;
+    @apply transform hover:scale-110 hover:shadow-lg;
+}
